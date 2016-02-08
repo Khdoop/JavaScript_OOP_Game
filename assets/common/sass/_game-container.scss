@@ -1,0 +1,66 @@
+@keyframes animatedBackground {
+  100% {
+    background-position: -2310px 0;
+  }
+}
+
+@-webkit-keyframes animatedBackground {
+  100% {
+    background-position: -2310px 0;
+  }
+}
+
+@-moz-keyframes animatedBackground {
+  100% {
+    background-position: -2310px 0;
+  }
+}
+
+@-o-keyframes animatedBackground {
+  100% {
+    background-position: -2310px 0;
+  }
+}
+
+#game-container {
+  height: $stage-height;
+  background-image: $stage-background-image;
+  overflow: hidden;
+
+  animation: animatedBackground 40s linear infinite;
+  -webkit-animation: animatedBackground 40s linear infinite;
+  -moz-animation: animatedBackground 40s linear infinite;
+  -o-animation: animatedBackground 40s linear infinite;
+  
+  .top-info {
+    padding-top: 10px;
+
+    #lives, #time, #score {
+      font-size: 18px;
+    }
+  }
+
+  #stage {
+    height: 550px;
+    position: relative;
+
+    #player {
+      width: 146px;
+      height: 169px;
+      position: absolute;
+      bottom: 10px;
+      left: 100px;
+      background: url("../images/player_walk.gif") no-repeat;
+    }
+
+    #enemy {
+      width: 126px;
+      height: 60px;
+      position: absolute;
+      bottom: 0;
+      right: -126px;
+      display: none;
+      background: url("../images/enemy_slime.gif") no-repeat;
+    }
+  }
+}

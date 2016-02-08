@@ -1,0 +1,65 @@
+header {
+  min-height: $header-min-height;
+
+  .panel, .panel-heading {
+    border-radius: 0 !important;
+    border: none !important;
+  }
+
+  .game-info {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 30px;
+
+    .panel-body {
+
+      .row {
+        margin: 20px 0;
+
+        .hide-input {
+          display: none;
+        }
+
+        .pick-color {
+          width: 25px;
+          height: 25px;
+          background: #f19cb7;
+          cursor: pointer;
+          box-sizing: border-box;
+          margin: 0;
+          display: inline-block;
+        }
+
+        :checked + label {
+          width: 35px;
+          height: 35px;
+        }
+
+        #color-blue-label {
+          -webkit-filter: hue-rotate(250deg);
+        }
+
+        #color-green-label {
+          -webkit-filter: hue-rotate(180deg);
+        }
+
+        #color-orange-label {
+          -webkit-filter: hue-rotate(50deg) saturate(2);
+        }
+
+        #color-yellow-label {
+          -webkit-filter: hue-rotate(90deg) saturate(2);
+        }
+
+        #color-purple-label {
+          -webkit-filter: hue-rotate(300deg);
+        }
+      }
+
+    }
+  }
+
+  #start {
+    font-size: 40px;
+  }
+}
