@@ -12,7 +12,6 @@ $(function() {
 
     var gameContainer = $('#game-container');
     var start = $('#start');
-    var submitScore = $('#submit-score');
     var debug = $('#debug');
     var rock = $('#rock');
 
@@ -45,7 +44,9 @@ $(function() {
         }
     });
 
-    submitScore.on('click', function() {
+    $('form').on('submit', function(e) {
+        e.preventDefault();
+
         $('#name-modal').modal('hide');
 
         var playerData = [
